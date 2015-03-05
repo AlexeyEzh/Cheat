@@ -23,3 +23,7 @@ public void RenderGameOverlayEvent(net.minecraftforge.client.event.RenderGameOve
 if (event.type == RenderGameOverlayEvent.ElementType.TEXT) {
 }
 }
+
+Регистрация
+
+MinecraftForge.EVENT_BUS.register(RenderHandler.instance);
