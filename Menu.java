@@ -20,7 +20,7 @@ private static Minecraft mc = Minecraft.getMinecraft();
 public void RenderGameOverlayEvent(net.minecraftforge.client.event.RenderGameOverlayEvent event) {
 
 // рендер 
-if (event.type == RenderGameOverlayEvent.ElementType.TEXT) {
+if (event.type == net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType.TEXT) {
 }
 }
 
