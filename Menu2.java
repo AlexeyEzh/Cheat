@@ -44,3 +44,4 @@
   	drawRect(x1, y1 - 1, x1 - size, y + size, borderC);
   	drawRect(x, y1 - size, x1, y1, borderC);
   	}
+drawBorderedRect(0, 0, 80, 12, 1, 0xFF7CFC00, 0x60000000);
