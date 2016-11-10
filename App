@@ -5,11 +5,9 @@ c: char;
 i, p, l : Integer;
 
 begin
-
-  readln(p)
+  readln(p);
   l:= 0;
-  
-  While Not Eoln do  //потоковый ввод строки более 255 символов
+   While Not Eoln do  //потоковый ввод строки более 255 символов
     begin
       read(c);
       inc(l); //l:=l+l, чтобы заполнялась ячейки
