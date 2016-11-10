@@ -30,17 +30,11 @@ int s2 [] = {0, 1};
 for(int i : s10){ 
 p = p - 1; 
 if(i == p ){ 
-if(s10 ){ 
 
-} 
-
-
-} else 
-{ 
+} else
 System.out.println("Erorr"); 
 break; 
 } 
 } 
 } 
-}
-}
+
