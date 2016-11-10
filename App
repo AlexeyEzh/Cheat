@@ -1,40 +1,20 @@
-import java.util.Scanner; 
+const N = 10;
+var
+a: array [1..N] of char;
+c: char;
+i, p, l : Integer;
+begin
+readln(p);
 
-public class App { 
-
-public static int p; 
-public static String result; 
-public static int s; 
-
-
-public static void main(String[] args) { 
-Scanner sc = new Scanner(System.in); 
-p = sc.nextInt(); // Получаем основание системы 
-s = sc.nextInt(); // Получаем число в системе p 
-Check(); 
-
-} 
-
-public static void Check(){ 
-
-int s10[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; 
-int s9[] = {0, 1, 2, 3, 4, 5, 6, 7, 8}; 
-int s8[] = {0, 1, 2, 3, 4, 5, 6, 7}; 
-int s7[] = {0, 1, 2, 3, 4, 5, 6}; 
-int s6[] = {0, 1, 2, 3, 4, 5}; 
-int s5 [] = {0, 1, 2, 3, 4}; 
-int s4 [] = {0, 1, 2, 3}; 
-int s3 [] = {0, 1, 2}; 
-int s2 [] = {0, 1}; 
-
-for(int i : s10){ 
-p = p - 1; 
-if(i == p ){ 
-
-} else
-System.out.println("Erorr"); 
-break; 
-} 
-} 
-} 
-
+While Not Eoln(a) do  //потоковый ввод строки более 255 символов
+begin
+read(c);
+inc(l); //i:=i+1, чтобы заполнялась ячейки
+readln(a[l]);
+end;
+readln;
+for i:= 1 to l do 
+wrtie(a[i]);
+writeln;
+readln;
+end.
