@@ -3,18 +3,26 @@ var
 a: array [1..N] of char;
 c: char;
 i, p, l : Integer;
-begin
-readln(p);
 
-While Not Eoln(a) do  //потоковый ввод строки более 255 символов
 begin
-read(c);
-inc(l); //i:=i+1, чтобы заполнялась ячейки
-readln(a[l]);
-end;
-readln;
-for i:= 1 to l do 
-wrtie(a[i]);
-writeln;
-readln;
+
+  readln(p)
+  l:= 0;
+  
+  While Not Eoln do  //потоковый ввод строки более 255 символов
+    begin
+      read(c);
+      inc(l); //l:=l+l, чтобы заполнялась ячейки
+      readln(a[l]);
+    end;
+  
+  readln;
+  
+  for i:= 1 to l do 
+    begin
+     write(a[i]);
+     writeln;
+     readln;
+    end;
+    
 end.
