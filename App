@@ -36,15 +36,18 @@ begin
       end
        else
         if(sh < 7) then begin
-          for j:= k+1 to k+sh do begin
-            b[j]:= c;
+          sh:=1;
+          for j:= 1 to sh;
+          write(c);
           end;
           k:=j;
         end
-        else 
+        else begin
           write(c, '[');
           getByte(sh);
           write(']');        
+         end
+         sh:=0; 
   end; 
  
 end.
