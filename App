@@ -32,10 +32,8 @@ begin
   while i<=l do 
    begin
     c:=a[i];
-      if((a[i] = a[i+ 1]) and (i <> l)) then begin
-      i:=i+1
-      end
-       else
+      if((a[i] = a[i+ 1]) and (i <> l)) then  i:=i+1
+        else
         begin
         sh:=i;
         writeln('sh = ', sh);
