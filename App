@@ -28,6 +28,7 @@ begin
   readln;
   k:= 1;
   i:= 1;
+  sh:=1;
   while i<>l do begin
     c:=a[i];
       if(a[i] = a[i+ 1]) then begin
@@ -36,8 +37,7 @@ begin
       end
        else
         if(sh < 7) then begin
-          sh:=1;
-          for j:= 1 to sh;
+          for j:= 1 to sh do
           write(c);
           end;
           k:=j;
