@@ -33,15 +33,16 @@ begin
    begin
     c:=a[i];
       if((a[i] = a[i+ 1]) and (i <> l)) then  i:=i+1
-        else
+      else
         begin
         sh:=i;
         writeln('sh = ', sh);
           if(sh < 7) then 
             begin
               for j:= 1 to sh do write(c);
-              end  
-            else begin
+            end  
+          else 
+            begin
               write(c, '[');
               getByte(sh);
               write(']');
