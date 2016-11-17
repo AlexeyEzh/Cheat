@@ -32,11 +32,13 @@ begin
   while i<=l do 
    begin
     c:=a[i];
-      if((a[i] = a[i+ 1]) and (i <> l)) then  i:=i+1
+      if((a[i] = a[i+ 1]) and (i <> l)) then 
+        begin
+        sh:=sh + 1;
+        i:=i+1;
+        end
       else
         begin
-        sh:=i;
-        writeln('sh = ', sh);
           if(sh < 7) then 
             begin
               for j:= 1 to sh do write(c);
@@ -47,9 +49,10 @@ begin
               getByte(sh);
               write(']');
             end;    
-              i:=i+1;
-              sh:=1;
+         i:=i+1; 
+         writeln(' sh = ', sh);
          end;
+        
    end; 
  
 end.
